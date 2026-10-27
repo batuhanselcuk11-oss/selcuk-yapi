@@ -218,8 +218,44 @@
     <div class="footer-brand">SELÇUK <span>YAPI</span></div>
     <div>© <span id="year"></span> Selçuk Yapı. Tüm hakları saklıdır.</div>
     <div>Bodrum, Muğla</div>
+    <div class="footer-instagram">
+      <a
+        href="https://www.instagram.com/selcukyapi.bodrum/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Selçuk Yapı Instagram hesabı"
+      >
+        Instagram'da Bizi Takip Edin
+      </a>
+    </div>
   </div>
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<style>
+  .footer-instagram {
+    margin-top: 12px;
+  }
+
+  .footer-instagram a {
+    display: inline-block;
+    color: #f5c400;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #f5c400;
+    border-radius: 24px;
+    padding: 10px 16px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .footer-instagram a:hover {
+    background-color: #f5c400;
+    color: #111111;
+  }
+</style>
+
+<script>
+  document.getElementById('year').textContent =
+    new Date().getFullYear();
+</script>
 </body>
 </html>
